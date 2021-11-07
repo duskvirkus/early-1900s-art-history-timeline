@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+html,
+body,
+#grid-container {
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+#p5-container {
+  margin: 5%;
+  width: 90%;
+  height: 90%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#info-container {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 5%;
+  margin-left: 0px;
+  width: 90%;
+  height: 90%;
+}
+
+.artist-hidden {
+    height: 0px;
+    display: none;
+}
